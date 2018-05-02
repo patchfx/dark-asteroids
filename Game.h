@@ -4,14 +4,19 @@
 
 #ifndef DARK_ASTEROIDS_GAME_H
 #define DARK_ASTEROIDS_GAME_H
+#include <iostream>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#include <string.h>
+#include <stdlib.h>
 
 
 class Game {
 public:
     Game();
-    int run();
-private:
-    bool playing;
+    void processInput(GLfloat deltaTime);
+    void update(GLfloat deltaTime);
+    void render();
 };
 
 

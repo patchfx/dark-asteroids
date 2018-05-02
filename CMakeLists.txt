@@ -7,7 +7,7 @@ if (Apple)
     set(CMAKE_CXX_FLAGS "-framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo")
 endif()
 
-add_executable(dark_asteroids main.cpp)
+add_executable(dark_asteroids main.cpp Game.cpp Game.h)
 
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
